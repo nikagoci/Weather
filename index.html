@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="maincss/styles.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="h-screen bg-[url('https://thumbs.dreamstime.com/b/sky-blue-art-weather-bright-website-background-sky-blue-art-nice-weather-bright-website-background-175101351.jpg')] bg-no-repeat bg-cover bg-center">
+    <div id="main-text">
+        <h1 class="text-5xl text-center py-5 text-blue-800">Weather around the world</h1>
+        <h3 class="text-4xl mt-5 text-center text-blue-600">Choose your city</h3>
+            <div class="mt-5 w-full h-full text-center" id="mini-form">
+                <input class="rounded-lg border-2 mr-1 px-4 py-2 focus: outline-none" type="text" placeholder="Enter Your city" id="input">
+                <button id="button-input" class="rounded-lg px-8 py-2 bg-teal-500 text-white hover:bg-emerald-400 duration-150">Submit</button>
+            </div>
+        <h2 class="text-4xl py-5 mb-7 text-center text-blue-600" id="your-city">Your city: None</h2>
+    </div>
+
+    <div class="border-4 border-blue-800 rounded-2xl m-auto bg-blue-800 w-2/5 h-2/5" id="container">
+        <h1 class="text-5xl my-7 ml-7 text-white" id="gradus">City is not choosen</h1>
+            <p class="text-4xl ml-7 leading-normal text-blue-300" id="weather">
+                <span id="posible-weather">City is not choosen</span> <br>
+                <span id="humidity">City is not choosen</span> <br>
+                <span id="wind-speed">City is not choosen</span> <br>
+                <span class="hidden" id="more-info-elements">City is not choosen</span> <br>
+                <span class="hidden" id="more-info-elements">City is not choosen</span> <br>
+                <span class="hidden" id="more-info-elements">City is not choosen</span> <br>
+                <span class="hidden" id= more-info-elements">City is not choosen</span>
+            </p>
+
+        <img class="invisible relative bottom-96 left-72 h-2/5 m-auto" id="info" src="" alt="">
+            <div class="text-center" id="button-center">
+                <button class="relative mt-3 bottom-72 rounded-lg scale-100  px-8 py-2 bg-purple-800 text-white hover:bg-purple-600 hover:scale-110 duration-500 " id="more-info">More info</button>
+            </div>       
+        
+            <p class="hidden" id="trick">&#8451;</p>
+            <p class="hidden" id="trick-2">&deg;</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
